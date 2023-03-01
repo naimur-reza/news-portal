@@ -13,7 +13,6 @@
     />
   </head>
   <body onload="loadData()">
-
     <!-- Header goes from here -->
     <header>
       <ul class="nav justify-content-center">
@@ -30,15 +29,23 @@
           <a class="nav-link disabled">Link</a>
         </li>
       </ul>
+      <hr class="container" />
+      <section
+        id="container"
+        class="container d-flex justify-content-between"
+      ></section>
     </header>
-    <hr class="container" />
 
-
-<!-- Main goes from here -->
+    <!-- Main goes from here -->
     <main>
-      <section id="container" class="container d-flex justify-content-between">
-
+      <section>
+        <div class="alert alert-light container my-4" role="alert">
+          <span id="news-count">0</span> items found for category
+          <span id="category-name"></span>
+        </div>
       </section>
+
+      <!-- Sorting option section -->
     </main>
 
     <!-- script Files -->
