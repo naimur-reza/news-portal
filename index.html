@@ -11,6 +11,10 @@
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     />
+    <script
+      src="https://kit.fontawesome.com/e2fcca217c.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body onload="loadData()">
     <!-- Header goes from here -->
@@ -48,28 +52,27 @@
       <!-- Sorting option section -->
       <section class="d-flex justify-content-between container">
         <div class="d-flex align-items-center gap-2">
-            <p>Sort By</p>
-            <div>
-                <select class="form-select form-select-sm mb-3" aria-label=".form-select-lg example">
-                    <option selected>Default</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                  </select>
-            </div>
+          <p>Sort By</p>
+          <div>
+            <select
+              class="form-select form-select-sm mb-3"
+              aria-label=".form-select-lg example"
+            >
+              <option selected>Default</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
         </div>
         <div>
-            <button class="btn btn-outline-primary">Today's pick</button>
-            <button class="btn btn-outline-secondary">Trending</button>
+          <button class="btn btn-outline-primary">Today's pick</button>
+          <button class="btn btn-outline-secondary">Trending</button>
         </div>
       </section>
 
-
-<!-- All news side start from here -->
-      <section id="all-news" class="container">
-
-
-      </section>
+      <!-- All news side start from here -->
+      <section id="all-news" class="container"></section>
     </main>
 
     <!-- script Files -->

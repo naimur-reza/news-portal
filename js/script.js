@@ -34,11 +34,18 @@ const displayCatagoriesNews = (data, category_name) => {
     <div class="col-md-4">
       <img src="${newses.image_url}" class="img-fluid rounded-start" alt="...">
     </div>
-    <div class="col-md-8">
+    <div class="col-md-8 d-flex flex-column">
       <div class="card-body">
         <h5 class="card-title">${newses.title}</h5>
-        <p class="card-text">${newses.details.slice(0,250)}.....</p>
-        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        <p class="card-text">${newses.details.slice(0,200)}.....</p>
+     </div>
+    <div class="card-footer border-0 bg-body">
+        <div class="d-flex align-items-center gap-2">
+        <img class="rounded-circle" src="${newses.author.img}" class="img-fluid " alt="..." height="40" width="40">
+        <div><p class="p-0 m-0">${newses.author.name? newses.author.name : "Not found user"}</p>
+         <p class="p-0 m-0">${newses.author.published_date? newses.author.published_date : "Not found time"}</p></div>
+         <p class-="ps-2"><i class="fa-regular fa-eye"></i> 400</p>
+         </div>
       </div>
     </div>
   </div>
