@@ -12,40 +12,32 @@
       crossorigin="anonymous"
     />
   </head>
-  <body>
+  <body onload="loadData()">
+
+    <!-- Header goes from here -->
     <header>
-      <section
-        class="d-flex justify-content-between container align-middle align-items-center"
-      >
-        <div>
-          <h1 class="">News Portal</h1>
-        </div>
-        <div class="d-flex align-items-center gap-3">
-          <a class="text-decoration-none text-black-50 fw-bold" href="">News</a>
-          <a class="text-decoration-none text-black-50 fw-bold" href="">Blog</a>
-          <a class="text-decoration-none text-black-50 fw-bold" href=""
-            ><img src="" alt=""
-          /></a>
-        </div>
-      </section>
+      <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Active</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled">Link</a>
+        </li>
+      </ul>
     </header>
     <hr class="container" />
 
+
+<!-- Main goes from here -->
     <main>
-      <section>
-        <div>
-          <ul class="d-flex container gap-5 list-unstyled ">
-            <li><a class="text-decoration-none text-black-50 fw-semibold" href="">Home</a></li>
-            <li><a class="text-decoration-none text-black-50 fw-semibold" href="">Breaking News</a></li>
-            <li><a class="text-decoration-none text-black-50 fw-semibold" href="">Regular News</a></li>
-            <li><a class="text-decoration-none text-black-50 fw-semibold" href="">International News</a></li>
-            <li><a class="text-decoration-none text-black-50 fw-semibold" href="">Sports</a></li>
-            <li><a class="text-decoration-none text-black-50 fw-semibold" href="">Entertainment</a></li>
-            <li><a class="text-decoration-none text-black-50 fw-semibold" href="">Culture</a></li>
-            <li><a class="text-decoration-none text-black-50 fw-semibold" href="">Arts</a></li>
-            <li><a class="text-decoration-none text-black-50 fw-semibold" href="">All News</a></li>
-          </ul>
-        </div>
+      <section id="container" class="container d-flex justify-content-between">
+
       </section>
     </main>
 
