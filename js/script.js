@@ -29,7 +29,7 @@ const displayCatagoriesNews = (data, category_name) => {
  newsContainer.innerHTML = '';
  data.forEach(newses => {
     newsContainer.innerHTML += `
-    <div class="card mb-3 container my-4">
+    <div class="card  m-0 my-4">
   <div class="row g-0">
     <div class="col-md-4">
       <img src="${newses.image_url}" class="img-fluid rounded-start" alt="...">
@@ -37,7 +37,7 @@ const displayCatagoriesNews = (data, category_name) => {
     <div class="col-md-8">
       <div class="card-body">
         <h5 class="card-title">${newses.title}</h5>
-        <p class="card-text">${newses.details.slice(1,250)}</p>
+        <p class="card-text">${newses.details.slice(0,250)}.....</p>
         <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
       </div>
     </div>
